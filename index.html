@@ -35,6 +35,7 @@
 .filter-group select,.filter-group input{width:100%;border:1px solid rgba(20,19,15,.12);border-radius:14px;background:rgba(255,255,255,.62);padding:10px 12px;color:var(--ink);font:inherit;font-size:13px}
 .filter-links{display:grid;grid-template-columns:1fr;gap:6px}.filter-links a{color:var(--ink);text-decoration:none;border-radius:12px;padding:8px 10px;font-size:13px;background:rgba(20,19,15,.035)}.filter-links a:hover{background:rgba(89,101,83,.12)}
 .filter-reset{width:100%;border:0;border-radius:14px;background:rgba(20,19,15,.08);color:var(--ink);padding:11px 12px;font-weight:850;cursor:pointer}.is-hidden-by-filter{display:none!important}
+@media(min-width:1500px){body.filters-docked .shell{width:min(1220px,calc(100% - 392px));margin-left:340px;margin-right:auto}.filter-panel.is-collapsed.auto-docked{transform:none;opacity:1;pointer-events:auto}}
 @media(max-width:900px){.side-toggle{top:18px;left:18px}.filter-panel{top:16px;left:16px;right:16px;width:auto;max-height:calc(100dvh - 32px)}}
 </style>
 </head>
@@ -80,7 +81,6 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const panel=document.querySelector('.filter-panel');
 const toggle=document.querySelector('.side-toggle');
 const countLabel=document.querySelector('.filter-count');
-const firstShell=document.querySelector('.shell');
 const controls={
   region:document.querySelector('[data-filter="region"]'),
   provider:document.querySelector('[data-filter="provider"]'),
@@ -91,12 +91,14 @@ const controls={
 const reset=document.querySelector('[data-filter-reset]');
 function openPanel(open){panel.classList.toggle('is-collapsed',!open);toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Hide filters':'Menu / filters'}
 function panelCanDock(){
-  if(!firstShell) return false;
-  const shellLeft=firstShell.getBoundingClientRect().left;
-  const panelRight=panel.offsetLeft+panel.offsetWidth+28;
-  return window.innerWidth>900&&shellLeft>=panelRight;
+  return window.innerWidth>=1500;
 }
-function syncDockedPanel(){openPanel(panelCanDock())}
+function setPanelOpen(open,auto=false){
+  panel.classList.toggle('auto-docked',auto&&open);
+  document.body.classList.toggle('filters-docked',auto&&open);
+  openPanel(open);
+}
+function syncDockedPanel(){setPanelOpen(panelCanDock(),true)}
 function matches(el){
   const region=controls.region.value,provider=controls.provider.value,robot=controls.robot.value,score=controls.score.value,query=controls.search.value.trim().toLowerCase();
   return (!region||el.dataset.region===region)&&(!provider||(el.dataset.provider||'').split(' ').includes(provider))&&(!robot||(el.dataset.robot||'').split(' ').includes(robot))&&(!score||el.dataset.scoreBand===score)&&(!query||(el.dataset.search||el.textContent||'').toLowerCase().includes(query));
@@ -114,10 +116,10 @@ function applyFilters(){
   document.querySelectorAll('.call-card').forEach(card=>{const ok=matches(card);card.classList.toggle('is-hidden-by-filter',!ok);if(ok)visibleCalls+=1});
   countLabel.textContent=`${visibleRegions} regions · ${visibleCalls} calls`;
 }
-toggle.addEventListener('click',()=>openPanel(panel.classList.contains('is-collapsed')));
+toggle.addEventListener('click',()=>setPanelOpen(panel.classList.contains('is-collapsed'),false));
 Object.values(controls).forEach(control=>control.addEventListener('input',applyFilters));
 reset.addEventListener('click',()=>{Object.values(controls).forEach(control=>control.value='');applyFilters()});
-document.querySelectorAll('[data-jump]').forEach(link=>link.addEventListener('click',()=>{if(!panelCanDock())openPanel(false)}));
+document.querySelectorAll('[data-jump]').forEach(link=>link.addEventListener('click',()=>{if(!panelCanDock())setPanelOpen(false,false)}));
 window.addEventListener('resize',syncDockedPanel);
 syncDockedPanel();
 applyFilters();
