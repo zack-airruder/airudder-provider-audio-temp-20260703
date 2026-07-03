@@ -1,0 +1,693 @@
+{
+  "generated_at": "2026-07-02T10:16:27.147244+00:00",
+  "baseline_dir": "/Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32",
+  "matched_rows": 32,
+  "current_rows": 32,
+  "avg_delta": 0.85,
+  "source_class_delta": [
+    {
+      "source_class": "airudder_callid",
+      "avg_delta": 1.09,
+      "matched": 17
+    },
+    {
+      "source_class": "competitor_attachment",
+      "avg_delta": 0.57,
+      "matched": 15
+    }
+  ],
+  "rows": [
+    {
+      "suite_id": "BR-B",
+      "file_name": "1d90c46116244eee8e485d0016b99dc9.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "PO_DC_BR_PR_Jeni_SHEIN_DM2_B",
+      "baseline_score": 4.5,
+      "current_score": 6.8,
+      "delta": 2.3,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Speaking Style",
+        "Latency",
+        "Voice/Timbre"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "BR-C",
+      "file_name": "e456a69ddda54dd8a9ecbf145ee1080e.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "M1_L2_BR_PT_Gil_DIDI_M25_S1",
+      "baseline_score": 3.5,
+      "current_score": 5.2,
+      "delta": 1.7,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "BR-D",
+      "file_name": "808bbab1cf1040368c5055f56cc86a56.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_CL_BR_PT_mat_CredSystem",
+      "baseline_score": 5.2,
+      "current_score": 5.6,
+      "delta": 0.4,
+      "baseline_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Latency"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "BR-E",
+      "file_name": "BR-E_1_https_newup.tech_en.mpeg",
+      "source_class": "competitor_attachment",
+      "robot_name": "https://newup.tech/en",
+      "baseline_score": 4.5,
+      "current_score": 5.6,
+      "delta": 1.1,
+      "baseline_weakest": [
+        "Latency",
+        "Voice/Timbre",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "ID-B",
+      "file_name": "70bd84b859c74eb59647504826fe158b.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "M0_L2_ID_BA_Fin_Kuainiu_DM2_DPD1",
+      "baseline_score": 4.2,
+      "current_score": 5.5,
+      "delta": 1.3,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Voice/Timbre",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Speaking Style",
+        "Interrupt/Exception",
+        "Voice/Timbre"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 1
+    },
+    {
+      "suite_id": "ID-C",
+      "file_name": "aead7856624f4b5cbb64e34230f4aaa5.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_OB_CL_BA_ID_INDIHOME_PraNPCCT0_Qwen",
+      "baseline_score": 3.5,
+      "current_score": 6.2,
+      "delta": 2.7,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Speaking Style",
+        "Latency",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "ID-D",
+      "file_name": "ID-D_1_竞品LLM-Dyna.wav",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Dyna",
+      "baseline_score": 4.2,
+      "current_score": 4.5,
+      "delta": 0.3,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Opening"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "ID-D",
+      "file_name": "ID-D_2_竞品LLM-Dyna.wav",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Dyna",
+      "baseline_score": 3.5,
+      "current_score": 4.5,
+      "delta": 1.0,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "ID-D",
+      "file_name": "ID-D_3_竞品LLM-Dyna.wav",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Dyna",
+      "baseline_score": 5.2,
+      "current_score": 6.2,
+      "delta": 1.0,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Voice/Timbre",
+        "Latency"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Latency"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 1
+    },
+    {
+      "suite_id": "MX-B",
+      "file_name": "49e24746b71449bfbe2421e6789a8b2b.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "M1_L2_MX_ES_Jsu_Stori_DM2_v2",
+      "baseline_score": 4.2,
+      "current_score": 6.3,
+      "delta": 2.1,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "MX-C",
+      "file_name": "910c30c0c299424b8878e6b373604f30.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_M1_L2_MX_ES_Jess_Bankaya_UberProCard_CL",
+      "baseline_score": 4.2,
+      "current_score": 5.4,
+      "delta": 1.2,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Speaking Style",
+        "Latency",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "MX-D",
+      "file_name": "MX-D_1_竞品LLM-Jekka.ai.wav",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Jekka.ai",
+      "baseline_score": 3.5,
+      "current_score": 5.2,
+      "delta": 1.7,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Interrupt/Exception",
+        "Latency"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "MY-B",
+      "file_name": "ed00bb77fc7045be93c3d70a66e94be2.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "PO_MY_MS_EN_Far_AeonCredit_PF_DM2",
+      "baseline_score": 3.5,
+      "current_score": 2.6,
+      "delta": -0.9,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Latency",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "MY-C",
+      "file_name": "8f0a5462c45a4740b2afc59a7df19e4a.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_MY_EN_MS_CL_UOB_Far",
+      "baseline_score": 4.2,
+      "current_score": 5.1,
+      "delta": 0.9,
+      "baseline_weakest": [
+        "Opening",
+        "Latency",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Latency",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "MY-D",
+      "file_name": "MY-D_1_竞品LLM-Revocall(双语).m4a",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Revocall（双语）",
+      "baseline_score": 4.2,
+      "current_score": 5.6,
+      "delta": 1.4,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Opening",
+        "Latency"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "MY-D",
+      "file_name": "MY-D_2_竞品LLM-Revocall(双语).m4a",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Revocall（双语）",
+      "baseline_score": 2.5,
+      "current_score": 2.5,
+      "delta": 0.0,
+      "baseline_weakest": [
+        "Opening",
+        "Speaking Style",
+        "Latency"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Opening"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "MY-E",
+      "file_name": "MY-E_1_竞品LLM-Seavoice(双语).mp3",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Seavoice（双语）",
+      "baseline_score": 6.2,
+      "current_score": 6.3,
+      "delta": 0.1,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Voice/Timbre",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "Multi-Language-B",
+      "file_name": "3ac8118ac7154807a70ffaa6f3845d25.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_M1_L2_SG_EN_Far_UOB_Demo_Flash",
+      "baseline_score": 4.2,
+      "current_score": 7.0,
+      "delta": 2.8,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Voice/Timbre"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "Multi-Language-C",
+      "file_name": "d4d3f887342b49ffbcce5293407187fe.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_M1_L2_SG_EN_Far_UOB_Demo_Flash",
+      "baseline_score": 2.5,
+      "current_score": 4.2,
+      "delta": 1.7,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "Multi-Language-D",
+      "file_name": "Multi-Language-D_1_竞品LLM-EIS.mp3",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-EIS",
+      "baseline_score": 5.2,
+      "current_score": 7.2,
+      "delta": 2.0,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Interrupt/Exception",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Voice/Timbre"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "PH-B",
+      "file_name": "60e150657b62473bb37ef674f4b23e2a.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "M1_L2_PH_PH_The_360_DM2_High",
+      "baseline_score": 2.5,
+      "current_score": 2.8,
+      "delta": 0.3,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Speaking Style",
+        "Interrupt/Exception",
+        "Voice/Timbre"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "PH-C",
+      "file_name": "2169614a155e4f7eb5ebf038a9f77614.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_M1_L2_PH_PH_360Kredi_Female",
+      "baseline_score": 2.5,
+      "current_score": 2.4,
+      "delta": -0.1,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "PH-D",
+      "file_name": "PH-D_1_竞品NLU-WIZ.m4a",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品NLU-WIZ",
+      "baseline_score": 3.2,
+      "current_score": 2.5,
+      "delta": -0.7,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 4
+    },
+    {
+      "suite_id": "TH-B",
+      "file_name": "60a92007151c49e4a4e8a3687626c8c4.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "COD_TH_TH_Jan_KEX_M25_B",
+      "baseline_score": 4.2,
+      "current_score": 3.2,
+      "delta": -1.0,
+      "baseline_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Opening"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "TH-C",
+      "file_name": "1da381b6d1614491b253fa6763ffae98.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_TH_DAX_Thai_PTP100_Prod",
+      "baseline_score": 4.5,
+      "current_score": 5.0,
+      "delta": 0.5,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Voice/Timbre",
+        "Interrupt/Exception"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Opening",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "TH-D",
+      "file_name": "TH-D_1_竞品LLM-94.wav",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-94",
+      "baseline_score": 1.2,
+      "current_score": 1.2,
+      "delta": 0.0,
+      "baseline_weakest": [
+        "Voice/Timbre",
+        "Opening",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Speaking Style",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "TH-D",
+      "file_name": "TH-D_2_竞品LLM-94.wav",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-94",
+      "baseline_score": 3.2,
+      "current_score": 3.5,
+      "delta": 0.3,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Latency",
+        "Interrupt/Exception"
+      ],
+      "baseline_red_flag_count": 3,
+      "current_red_flag_count": 2
+    },
+    {
+      "suite_id": "TH-E",
+      "file_name": "TH-E_1_竞品LLM-Botnoi.m4a",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品LLM-Botnoi",
+      "baseline_score": 3.5,
+      "current_score": 3.5,
+      "delta": 0.0,
+      "baseline_weakest": [
+        "Latency",
+        "Speaking Style",
+        "Opening"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "VN-B",
+      "file_name": "7fc6761420dc470d84d804fa732fa0a9.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "M1_L2_VN_VI_Nhi_Timo_M25",
+      "baseline_score": 3.5,
+      "current_score": 4.8,
+      "delta": 1.3,
+      "baseline_weakest": [
+        "Speaking Style",
+        "Interrupt/Exception",
+        "Latency"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 1,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "VN-C",
+      "file_name": "03163f0a9a7f4aa1b23ccd457d1e6c6f.wav",
+      "source_class": "airudder_callid",
+      "robot_name": "LLM_IB_VN_VI_Duy_Logistics",
+      "baseline_score": 4.2,
+      "current_score": 5.5,
+      "delta": 1.3,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Latency",
+        "Interrupt/Exception",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "VN-D",
+      "file_name": "VN-D_1_竞品NLU-FPT.m4a",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品NLU-FPT",
+      "baseline_score": 4.5,
+      "current_score": 3.6,
+      "delta": -0.9,
+      "baseline_weakest": [
+        "Opening",
+        "Latency",
+        "Speaking Style"
+      ],
+      "current_weakest": [
+        "Interrupt/Exception",
+        "Speaking Style",
+        "Opening"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 3
+    },
+    {
+      "suite_id": "VN-D",
+      "file_name": "VN-D_2_竞品NLU-FPT.m4a",
+      "source_class": "competitor_attachment",
+      "robot_name": "竞品NLU-FPT",
+      "baseline_score": 3.5,
+      "current_score": 4.8,
+      "delta": 1.3,
+      "baseline_weakest": [
+        "Latency",
+        "Opening",
+        "Voice/Timbre"
+      ],
+      "current_weakest": [
+        "Opening",
+        "Latency",
+        "Speaking Style"
+      ],
+      "baseline_red_flag_count": 2,
+      "current_red_flag_count": 3
+    }
+  ]
+}

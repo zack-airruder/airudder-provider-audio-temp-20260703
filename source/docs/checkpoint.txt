@@ -1,0 +1,13 @@
+CHECKPOINT:
+Goal: Run the canonical 32-audio Signal Room assessment round with gemini-3.5-flash.
+Project/repo: /Users/zackloo/Documents/Versus
+Files changed: tools/anthropomorphism-analyzer/run_audio_eval_round.py; generated artifacts under /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash
+Artifacts produced: /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash/batch-anthropomorphism.json; /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash/batch-anthropomorphism-final-32.json; /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash/report-data.json; /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash/source-aligned-comparison-data.json; /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash/model-delta-gemini-3.5-flash-vs-baseline.md
+Commands run: ZENLAYER_AI_GATEWAY_MODEL=gemini-3.5-flash python3 tools/anthropomorphism-analyzer/run_audio_eval_round.py --index /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/audio_paths_32_index.json --output-dir /Users/zackloo/Documents/Versus/tools/call-log-dashboard/data/evaluation-suite/deepgram-audio-eval-32-gemini-3.5-flash --provider zenlayer --model gemini-3.5-flash --stt-provider deepgram --workers 1 --csv --html
+Result: 32/32 files scored; 0 failures.
+Key decisions: Used curated audio_paths_32_index.json and Deepgram STT plus Zenlayer gemini-3.5-flash scoring.
+Known risks: Model deltas reflect evaluator/model changes and should not be treated as product regressions without evidence review.
+Not done: No media re-download, full BigJSON re-score, or direct Google/OpenRouter route.
+Remote/API/browser actions: Deepgram STT and Zenlayer gateway calls.
+Next recommended prompt: Review the Pro-vs-baseline delta report and identify the calls whose score or weakest dimensions changed materially.
+Suggested next agent: Evaluation reviewer/report writer.
