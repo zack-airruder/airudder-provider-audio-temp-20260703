@@ -80,6 +80,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const panel=document.querySelector('.filter-panel');
 const toggle=document.querySelector('.side-toggle');
 const countLabel=document.querySelector('.filter-count');
+const firstShell=document.querySelector('.shell');
 const controls={
   region:document.querySelector('[data-filter="region"]'),
   provider:document.querySelector('[data-filter="provider"]'),
@@ -89,6 +90,13 @@ const controls={
 };
 const reset=document.querySelector('[data-filter-reset]');
 function openPanel(open){panel.classList.toggle('is-collapsed',!open);toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Hide filters':'Menu / filters'}
+function panelCanDock(){
+  if(!firstShell) return false;
+  const shellLeft=firstShell.getBoundingClientRect().left;
+  const panelRight=panel.offsetLeft+panel.offsetWidth+28;
+  return window.innerWidth>900&&shellLeft>=panelRight;
+}
+function syncDockedPanel(){openPanel(panelCanDock())}
 function matches(el){
   const region=controls.region.value,provider=controls.provider.value,robot=controls.robot.value,score=controls.score.value,query=controls.search.value.trim().toLowerCase();
   return (!region||el.dataset.region===region)&&(!provider||(el.dataset.provider||'').split(' ').includes(provider))&&(!robot||(el.dataset.robot||'').split(' ').includes(robot))&&(!score||el.dataset.scoreBand===score)&&(!query||(el.dataset.search||el.textContent||'').toLowerCase().includes(query));
@@ -109,7 +117,9 @@ function applyFilters(){
 toggle.addEventListener('click',()=>openPanel(panel.classList.contains('is-collapsed')));
 Object.values(controls).forEach(control=>control.addEventListener('input',applyFilters));
 reset.addEventListener('click',()=>{Object.values(controls).forEach(control=>control.value='');applyFilters()});
-document.querySelectorAll('[data-jump]').forEach(link=>link.addEventListener('click',()=>openPanel(false)));
+document.querySelectorAll('[data-jump]').forEach(link=>link.addEventListener('click',()=>{if(!panelCanDock())openPanel(false)}));
+window.addEventListener('resize',syncDockedPanel);
+syncDockedPanel();
 applyFilters();
 
 </script>
