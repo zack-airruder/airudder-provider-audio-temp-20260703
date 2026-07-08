@@ -38,7 +38,7 @@
 .filter-group select,.filter-group input{width:100%;border:1px solid rgba(20,19,15,.12);border-radius:14px;background:rgba(255,255,255,.62);padding:10px 12px;color:var(--ink);font:inherit;font-size:13px}
 .filter-links{display:grid;grid-template-columns:1fr;gap:6px}.filter-links a{color:var(--ink);text-decoration:none;border-radius:12px;padding:8px 10px;font-size:13px;background:rgba(20,19,15,.035)}.filter-links a:hover{background:rgba(89,101,83,.12)}
 .filter-reset{width:100%;border:0;border-radius:14px;background:rgba(20,19,15,.08);color:var(--ink);padding:11px 12px;font-weight:850;cursor:pointer}.is-hidden-by-filter{display:none!important}
-@media(min-width:1500px){body.filters-docked .shell{width:min(1220px,calc(100% - 392px));margin-left:340px;margin-right:auto}.filter-panel.is-collapsed.auto-docked{transform:none;opacity:1;pointer-events:auto}}
+@media(min-width:1500px){body.filters-docked .shell{width:calc(100vw - 392px);max-width:none;margin-left:340px;margin-right:52px}.filter-panel.is-collapsed.auto-docked{transform:none;opacity:1;pointer-events:auto}}
 @media(max-width:900px){.side-toggle{top:18px;left:18px}.filter-panel{top:16px;left:16px;right:16px;width:auto;max-height:calc(100dvh - 32px)}}
 </style>
 </head>
